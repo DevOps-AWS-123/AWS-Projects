@@ -1,0 +1,7 @@
+bucket_name           = "my-qa-bucket"
+rds_db_name           = "qadatabase"
+rds_username          = "qaadmin"
+rds_password          = "qa-secure-password"
+vpc_cidr              = "10.0.10.0/16"
+public_subnet_cidr    = "10.0.11.0/24"
+private_subnet_cidr   = "10.0.12.0/24"

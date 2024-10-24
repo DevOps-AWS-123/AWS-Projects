@@ -1,0 +1,7 @@
+bucket_name           = "my-prod-bucket"
+rds_db_name           = "proddatabase"
+rds_username          = "prodadmin"
+rds_password          = "prod-secure-password"
+vpc_cidr              = "10.0.20.0/16"
+public_subnet_cidr    = "10.0.21.0/24"
+private_subnet_cidr   = "10.0.22.0/24"
