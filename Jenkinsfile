@@ -12,10 +12,10 @@ pipeline {
             )
         ])
     ])
-    environment {
-        AWS_REGION = 'us-west-2' // Specify your AWS region
-        TF_VAR_rds_password = credentials('rds_password') // Reference your Jenkins credential for RDS password
-    }
+    // environment {
+    //     AWS_REGION = 'us-west-2' // Specify your AWS region
+    //     TF_VAR_rds_password = credentials('rds_password') // Reference your Jenkins credential for RDS password
+    // }
     options {
         // Set build timeout (optional)
         timeout(time: 1, unit: 'HOURS')
@@ -26,7 +26,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the repository
-                git branch: 'main', url: 'https://github.com/yourusername/terraform-aws-infrastructure.git'
+                git branch: 'master', url: 'https://github.com/DevOps-AWS-123/AWS-Projects.git'
             }
         }
         stage('Terraform Init') {
